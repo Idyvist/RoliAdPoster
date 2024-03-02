@@ -7,9 +7,9 @@ import requests, time, threading, ctypes, os
 from threading import Thread
 
 # Settings
-user_id = 
-roli_data = ""
-roli_verification = ""
+user_id = ______
+roli_data = "______"
+roli_verification = "______"
 interval = 20
 
 sent = 0
