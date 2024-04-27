@@ -18,7 +18,7 @@ lock = threading.Lock()
 os.system('cls')
 
 
-# Use the Rolimons API to return a list of item IDs from your inventory
+# Use the Roblox API to return a list of item IDs from your inventory
 def get_inv():
     inv_response = requests.get(f"https://inventory.roblox.com/v1/users/{user_id}/assets/collectibles?limit=100").json()
     inv_data = inv_response.get("data", [])
@@ -47,7 +47,7 @@ def send():
     offer_items = sort_inv(get_inv())
     request_tags = ["any", "upgrade", "downgrade"]
     r = requests.post(
-        'https://www.rolimons.com/tradeapi/create',
+        'https://api.rolimons.com/tradeapi/v1/create',
 
         cookies={
             '_RoliVerification': roli_verification,
