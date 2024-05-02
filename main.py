@@ -47,7 +47,7 @@ def send():
     offer_items = sort_inv(get_inv())
     request_tags = ["any", "upgrade", "downgrade"]
     r = requests.post(
-        'https://api.rolimons.com/tradeapi/v1/create',
+        'https://api.rolimons.com/tradeads/v1/createad',
 
         cookies={
             '_RoliVerification': roli_verification,
